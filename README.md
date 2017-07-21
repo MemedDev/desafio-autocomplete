@@ -90,7 +90,7 @@ Não é necessário realizar uma busca verdadeira, será avaliada a interface e 
 ]
 ```
 
-Para o visual do autocomplete, você deve seguir essa imagem:
+Para o visual do autocomplete, você deve seguir a imagem abaixo. A fonte utilizada é a [Open Sans](https://fonts.google.com/specimen/Open+Sans).
 
 ![layout](https://user-images.githubusercontent.com/2197005/28479617-94429342-6e33-11e7-9707-00f99a5fb8f8.png)
 
