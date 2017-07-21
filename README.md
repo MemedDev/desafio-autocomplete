@@ -29,7 +29,7 @@ Lembre-se de alterar o README.md com as instruções para rodar o projeto.
 
 Não é necessário realizar uma busca verdadeira, será avaliada a interface e usabilidade. Abaixo, segue uma lista de medicamentos para serem mostrados no autocomplete, independente do que for escrito pelo usuário:
 
-```json
+```javascript
 [
 	{
 		fabricante: 'Roche',
