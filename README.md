@@ -27,7 +27,7 @@ Para enviar seu código, faça um fork deste repositório e nos avise quando con
 
 Lembre-se de alterar o README.md com as instruções para rodar o projeto.
 
-Não é necessário realizar uma busca verdadeira, será avaliada a interface e usabilidade. Abaixo, segue uma lista de medicamentos para serem mostrados no autocomplete, independente do que for escrito pelo usuário:
+Não é necessário realizar uma busca verdadeira, será avaliada a interface (UI) e usabilidade (UX). Abaixo, segue uma lista de medicamentos para serem mostrados no autocomplete, independente do que for escrito pelo usuário:
 
 ```javascript
 [
@@ -90,7 +90,9 @@ Não é necessário realizar uma busca verdadeira, será avaliada a interface e 
 ]
 ```
 
-Para o visual do autocomplete, você deve seguir a imagem abaixo. A fonte utilizada é a [Open Sans](https://fonts.google.com/specimen/Open+Sans).
+Para o visual do autocomplete, você deve seguir a imagem abaixo. ATENÇÃO NOS DETALHES VISUAIS (interface/layout), isso será o ponto principal analisado. 
+
+A fonte utilizada é a [Open Sans](https://fonts.google.com/specimen/Open+Sans).
 
 ![layout](https://user-images.githubusercontent.com/2197005/28479617-94429342-6e33-11e7-9707-00f99a5fb8f8.png)
 
