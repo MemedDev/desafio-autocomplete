@@ -11,7 +11,7 @@
 
 ### E clonar o repositório
 ```sh
-$ git clone ...
+$ git clone git@github.com:nathpaiva/desafio-autocomplete.git
 ```
 
 ## Antes de dar start no projeto é preciso instalar as dependencias:
