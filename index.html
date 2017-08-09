@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link rel="stylesheet" href="./public/assets/style.css" media="all" />
+  <title>
+    Memed
+  </title>
+</head>
+
+<body>
+  <header class="container">
+    <h1 class="title">Prescrição</h1>
+  </header>
+
+  <main class="main container">
+    <form class="form">
+      <div class="form__container form__container--medium">
+        <textarea class="form__entry form__entry--search" name="prescription" id="prescription" placeholder="Digite o nome do medicamento"></textarea>
+        <section class="search">
+          <ul class="search__nav">
+            <li class="search__nav--item active">Industrializados</li>
+            <li class="search__nav--item">Manipulados</li>
+            <li class="search__nav--item">Composições</li>
+            <li class="search__nav--item">Exames</li>
+            <a href="#" class="icon icon--more">More</a>
+          </ul>
+          <div class="search__list"></div>
+          <div class="search__text">
+            <a class="add__freetext" href="javascript:void(0)">
+              <span class="icon icon--text icon--inline">Text Icon</span>Adicionar texto livre
+            </a>
+          </div>
+          <footer class="search__footer search-container">
+            <small class="search__footer__assign"><span class="search__footer__assign--ligth">Powered by</span> Memed</small>
+          </footer>
+        </section>
+      </div>
+    </form>
+  </main>
+
+  <script type="text/javascript" src="./public/assets/bundler.js"></script>
+</body>
+
+</html>

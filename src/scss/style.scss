@@ -1,0 +1,281 @@
+@import "./_reset.scss";
+
+.main {
+  height: calc(100% - 71px - 80px);
+}
+
+.icon {
+  background:url("../images/sprite.png") no-repeat;
+  vertical-align:middle;
+  font-size:0;
+  text-indent:-9999px;
+  overflow:hidden;
+  display:block;
+  &--inline {
+    display:inline-block;
+  }
+  &--text {
+    width:30px;
+    height:30px;
+    background-position:-115px -3px;
+  }
+  &--more {
+    width:20px;
+    height:20px;
+    background-position:-6px -9px;
+  }
+}
+
+.title {
+  font-size:30px;
+  text-transform:uppercase;
+  color: $base-dark;
+  font-weight:700;
+  letter-spacing:5px;
+  padding-bottom: 15px;
+}
+
+.form {
+  height: 100%;
+  &__container {
+    width:100%;
+    &--medium {
+      width: 100%;
+      max-width: 770px;
+      height: 100%;
+    }
+    &--small {
+      width:30%;
+    }
+    &--inline {
+      display:inline-block;
+    }
+  }
+}
+
+
+.form__entry {
+  padding:50px 60px;
+  line-height:25px;
+  height: 100%;
+  resize: none;
+  width:100%;
+  border:0;
+  outline:0;
+  box-shadow:0 0 10px -3px $base;
+  box-sizing:border-box;
+  background:$light;
+  &--search {
+    background-image:url("../images/search-icon.png");
+    background-position: 15px 48px;
+    background-repeat:no-repeat;
+  }
+  &--text {
+    background-image:url("../images/text-icon.png");
+    background-position:50px 48px;
+    background-repeat:no-repeat;
+  }
+}
+
+.search {
+  position: absolute;
+  width:  96%;
+  background: $light;
+  top: 84px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px -3px $base;
+  display: none;
+  border: 1px solid $base-light;
+  &--active {
+    display: block;
+  }
+
+  &__nav {
+    position: relative;
+    padding: 8px 0;
+    text-align: center;
+    border-bottom: 1px solid $base-light;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    .icon--more {
+      position: absolute;
+      right: 14px;
+      top: 9px;
+    }
+    &--item {
+      display: inline-block;
+      font-size: 14px;
+      box-sizing: border-box;
+      padding: 3px 6px;
+      color:  $base-dark;
+      cursor: pointer;
+      margin-left:20px;
+      transition: .2s ease-in-out;
+      :first-child {
+        margin-left: 0;
+      }
+      &:hover,
+      &.active {
+        background: #5F5F64;
+        color:$light;
+        padding:3px 6px;
+        border-radius:3px;
+      }
+    }
+  }
+
+  &__list {
+    margin:10px 0;
+  }
+
+  &__text {
+    padding:20px;
+    font-size:15px;
+    border-top: 1px solid $base-light;
+    a {
+      text-decoration:none;
+      color: $base-dark;
+    }
+    .icon--text {
+      margin-right:20px;
+    }
+  }
+
+
+  &__footer {
+    padding: 10px;
+    text-align: right;
+    overflow:auto;
+    &__assign {
+      font-size: 11px;
+      &--ligth {
+        color: #CCCCCC;
+      }
+    }
+  }
+}
+
+.itemmed {
+  width:100%;
+  span {
+    display:block;
+     + span {
+      margin-top:4px;
+    }
+  }
+  &__icon {
+    width:50px;
+
+    &:before {
+      content:"";
+      display:block;
+      width:30px;
+      height:30px;
+      background-image:url("../images/sprite.png");
+      margin: auto;
+    }
+
+    &--referency:before {
+      background-position:-35px -2px;
+    }
+
+    &--generic:before {
+      background-position:-75px -2px;
+    }
+  }
+
+  &__name {
+    font-size:15px;
+  }
+
+  &__manufacturer {
+    font-size:14px;
+  }
+
+  &__ownership,
+  &__principle {
+    font-size:13px;
+    color:$base;
+  }
+
+  &__price span {
+    font-size:15px;
+    text-align:right;
+  }
+
+  &__from {
+    font-weight:700;
+  }
+
+  &__to {
+    color:$base;
+  }
+  &__ownership-hover {
+    display:none;
+    text-align:right;
+    span {
+      font-size:13px;
+      padding:4px;
+      background:$light;
+      display:inline-block;
+      border-radius:3px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    @media screen and (max-width : 619px) {
+      padding: 20px 0;
+      flex-direction: column;
+      height: initial;
+    }
+    cursor: pointer;
+    &:hover {
+      background-color:#F7F7F7;
+      .itemmed {
+        &__price {
+          display: none;
+        }
+        &__ownership-hover {
+          display: block;
+        }
+      }
+      @media screen and (max-width : 619px) {
+        .itemmed {
+          &__price {
+            display: block;
+          }
+          &__ownership-hover {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &__title {
+    width: 50%;
+  }
+  &__info {
+    width: 30%;
+  }
+  &__price,
+  &__ownership-hover {
+    width: 25%;
+    padding-right: 1.7%;
+  }
+  @media screen and (max-width : 619px) {
+    &__title,
+    &__info,
+    &__price,
+    &__ownership-hover {
+      width: 100%;
+      padding: initial;
+      text-align: center;
+      span {
+        text-align: center;
+      }
+    }
+  }
+}
